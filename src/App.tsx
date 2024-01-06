@@ -25,6 +25,12 @@ const App = () => {
     "german": <German />
   }
 
+  const footerTexts = {
+    "english": "All rights reserved. Abridged version of Sacred Marriage",
+    "french": "Tous droits réservés. Version abrégée du Mariage sacré",
+    "german": "Alle Rechte vorbehalten. Gekürzte Version von Sacred Marriage"
+  }
+
   return (
     <div className='flex items-center justify-center flex-col text-[#DBDBDB]'>
       <header className='flex items-start w-full justify-between'>
@@ -39,7 +45,7 @@ const App = () => {
       <h1 className='mb-10 text-sm italic'>Written in 2020. Author: Myrzakhmet Arman. Public figure, sports veteran</h1>
         {textComponents[selectedLanguage]}
       </div>
-
+      <p className='my-16'>{footerTexts[selectedLanguage]}</p>
     </div>
   )
 }
