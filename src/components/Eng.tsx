@@ -56,7 +56,7 @@ Do you really need this relationship?
 Does he have a clear plan?
 <br />
 <br />
-How does it relate to my computer?
+How does it relate to my parents?
 <br />
 <br />
 Does he/she understand what true love is?
