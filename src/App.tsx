@@ -43,7 +43,7 @@ const App = () => {
   }
 
   return (
-    <div className='flex items-center justify-center flex-col text-[#DBDBDB] p-4 sm:p-0'>
+    <div className='flex items-center justify-center flex-col text-[#DBDBDB] p-4 sm:py-0 sm:px-3'>
       <header className='flex w-full justify-between items-center'>
         <p className='text-2xl p-2 sm:text-lg'>SACRED MARRIAGE</p>
         <select className="sm:w-24 sm:text-xs bg-gray-50 w-40 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" value={selectedLanguage} onChange={(e) => handleLanguageChange(e.target.value as Language)}>
@@ -53,7 +53,7 @@ const App = () => {
           <option value={Language.RUSSIAN}>Русский</option>
         </select>
       </header>
-      <div className='max-w-[720px] text-start md:mt-16 md:p-10 rounded-xl sm:p-3 sm:mt-5' style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}>
+      <div className='max-w-[720px] text-start md:mt-16 md:p-10 rounded-xl sm:p-3 sm:mt-28' style={{ backgroundColor: 'rgba(0, 0, 0, 0.8)' }}>
       <h1 className='mb-10 text-sm italic'>{prefixTexts[selectedLanguage]}</h1>
         {textComponents[selectedLanguage]}
       </div>
